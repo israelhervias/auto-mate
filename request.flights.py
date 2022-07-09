@@ -18,6 +18,7 @@ flight_lst = []
 for flight in api_response['data'] :
     flight_dict = {}
 
+    flight_dict['flight_date'] = flight['flight_date']
     flight_dict['departure_airport'] = flight['departure']['airport']
     flight_dict['departure_terminal'] = flight['departure']['terminal']
     flight_dict['departure_gate'] = flight['departure']['gate']
